@@ -5,15 +5,15 @@ angular.module "App" <[app.templates ui.router]>
 .config <[$stateProvider $urlRouterProvider $locationProvider]> ++ ($stateProvider, $urlRouterProvider, $locationProvider) ->
   $stateProvider
     .state 'about' do
-      url: '/shinzan/about'
+      url: '#/about'
       templateUrl: 'app/partials/about.html'
       controller: "About"
     # Catch all
   $urlRouterProvider
-    .otherwise('/shinzan/about')
+    .otherwise('#/about')
 
   # Without serve side support html5 must be disabled.
-  $locationProvider.html5Mode true
+  #$locationProvider.html5Mode true
 
 .run <[$rootScope $state $stateParams $location $window $anchorScroll]> ++ ($rootScope, $state, $stateParams, $location, $window, $anchorScroll) ->
   $rootScope.$state = $state
