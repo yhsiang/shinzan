@@ -166,3 +166,5 @@ gulp.task 'css' <[bower]> ->
 gulp.task 'assets' ->
   gulp.src 'app/assets/**'
     .pipe gulp.dest '_public'
+
+gulp.task 'default' <[build]>
