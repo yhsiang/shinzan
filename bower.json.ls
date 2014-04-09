@@ -11,6 +11,7 @@ dependencies:
   "angular-mocks": "1.2.14"
   "angular-scenario": "1.2.14"
   "angular-ui-router": "0.2.10"
+  ihover: "1.0.0"
 
 overrides:
   "angular":
@@ -19,3 +20,5 @@ overrides:
     main: "README.md"
   "angular-scenario":
     main: "README.md"
+  ihover:
+    main: 'src/ihover.css'
